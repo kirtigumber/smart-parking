@@ -1,0 +1,72 @@
+# ==============================================================================
+# SMART PARK - ROOT .GITIGNORE
+# Excludes dependencies, build outputs, local credentials, logs, and IDE caches
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Frontend (React 18 + Vite)
+# ------------------------------------------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment & Secret files
+.env
+.env.*
+!.env.example
+
+# NPM, Yarn & PNPM Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# 2. Backend (Spring Boot 3 + Maven)
+# ------------------------------------------------------------------------------
+backend/target/
+target/
+*.jar
+*.war
+*.ear
+backend/.mvn/timing.properties
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot & Database temporary files
+*.log
+logs/
+*.h2.db
+*.trace.db
+
+# ------------------------------------------------------------------------------
+# 3. Operating System & Editor Files
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# JetBrains (IntelliJ IDEA, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Eclipse
+.project
+.classpath
+.settings/
